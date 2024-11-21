@@ -1,0 +1,75 @@
+/*General Styling*/
+body {
+    font-family: the 'Times New Roman', Times, serif;
+    background-color: white;
+    margin: auto;
+    padding: 150px;
+}
+.resume-container {
+    display: flex;
+    background-color: aliceblue;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20ps black (0.0.0.0.1);
+}
+
+.Left-Section {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 40%;
+    text-align: left;
+    border-right: 5px solid white;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 10px 0;
+    margin-bottom: 30px;
+    text-align: center;
+    color: black;
+    box-shadow: 0 0 20ps black;
+}
+
+h3 {
+    font-size: 18px;
+    padding: 2%;
+    margin: 20px 0 10px;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    text-align: justify;
+}
+ 
+ul {
+    list-style-type: full round;
+    padding: 10;
+    margin: 10px 0;
+    font-size: 12px;
+
+ }
+
+ ul li {
+    margin: 5px 0;
+    font-size: 12px;
+ }
+
+.Right-Section {
+padding: 20px;
+width: 65%;
+ }
+
+ button {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    margin-top: 10px;
+    font-size: 16px;
+ }
+
+ button:hover {
+    background-color: white ;
+ }
