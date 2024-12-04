@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updated Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic Resume Builder</h1>
+        
+        <!-- Form to input resume details -->
+        <div id="form-container">
+            <form id="resume-form">
+                <div class="row">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="row">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="row">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    </div>
+                <div class="row">
+                    <label for="education">Education:</label>
+                    <input type="text" id="education" name="education">
+                    <button type="button" id="add-education-btn">Add Education</button>
+                </div>
+                <div id="education-list" class="row-list"></div>
+                <div class="row">
+                    <label for="experience">Experience:</label>
+                    <input type="text" id="experience" name="experience">
+                    <button type="button" id="add-experience-btn">Add Experience</button>
+                </div>
+                <div id="experience-list" class="row-list"></div>
+                <div class="row">
+                    <label for="skills">Skills:</label>
+                    <input type="text" id="skills" name="skills">
+                    <button type="button" id="add-skills-btn">Add Skill</button>
+                </div>
+                <div id="skills-list" class="row-list"></div>
+                <button type="submit" id="generate-resume-btn">Generate Resume</button>
+            </form>
+        </div>
+
+        <!-- Resume preview -->
+        <div id="resume-preview" class="resume-preview">
+            <h2>Resume Preview</h2>
+            <div id="resume-output"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
