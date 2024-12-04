@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic update Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Left Section: Form for User Input -->
+    <div class="left-section">
+      <h2>Enter Your Details</h2>
+      <form id="resumeForm">
+        <!-- Personal Information -->
+        <div class="row">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" oninput="updateResumeFromLeft()">
+        </div>
+
+        <div class="row">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" oninput="updateResumeFromLeft()">
+        </div>
+
+        <div class="row">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" oninput="updateResumeFromLeft()">
+        </div>
+
+        <div class="row">
+          <label for="address">Address:</label>
+          <textarea id="address" name="address" placeholder="Enter your address" oninput="updateResumeFromLeft()"></textarea>
+        </div>
+
+        <!-- Work Experience -->
+        <div class="row">
+          <label for="experience">Work Experience:</label>
+          <textarea id="experience" name="experience" placeholder="Enter your work experience" oninput="updateResumeFromLeft()"></textarea>
+        </div>
+
+        <!-- Skills -->
+        <div class="row">
+          <label for="skills">Skills:</label>
+          <input type="text" id="skills" name="skills" placeholder="Enter your skills (comma separated)" oninput="updateResumeFromLeft()">
+        </div>
+
+        <!-- Education -->
+        <div class="row">
+          <label for="education">Education:</label>
+          <textarea id="education" name="education" placeholder="Enter your education details" oninput="updateResumeFromLeft()"></textarea>
+        </div>
+        <button type="button" id="generateButton">Generate Resume</button>
+      </form>
+    </div>
+
+    <!-- Right Section: Resume Preview -->
+    <div class="right-section">
+      <h2>Update Resume Preview</h2>
+      <div class="resume-content">
+        <h3>Personal Information</h3>
+        <div class="row">
+          <strong>Name:</strong> <span id="resumeName">Not Provided</span>
+        </div>
+        <div class="row">
+          <strong>Email:</strong> <span id="resumeEmail">Not Provided</span>
+        </div>
+        <div class="row">
+          <strong>Phone:</strong> <span id="resumePhone">Not Provided</span>
+        </div>
+        <div class="row">
+          <strong>Address:</strong> <span id="resumeAddress">Not Provided</span>
+        </div>
+
+        <h3>Work Experience</h3>
+        <div id="resumeExperience" class="list-section">
+          <div class="row">No Experience Provided</div>
+        </div>
+
+        <h3>Skills</h3>
+        <div id="resumeSkills" class="list-section">
+          <div class="row">No Skills Provided</div>
+        </div>
+
+        <h3>Education</h3>
+        <div id="resumeEducation" class="list-section">
+          <div class="row">No Education Provided</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
